@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPerson.DetailView">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Image 
+                x:Name="ImagePicture"
+                            Grid.Column="1"
+                            Grid.RowSpan="2"
+                            HeightRequest="50"
+                            WidthRequest="50"
+                            Source="{Binding Picture}"/>
+            <Entry
+                x:Name="EntryPicture"
+                Placeholder="URL de la imagen"
+                            Text="{Binding Picture}"/>
+            <Entry
+                x:Name="EntryFirstName"
+                Placeholder="Nombre"
+                            Text="{Binding FirstName}"/>
+            <Entry
+                x:Name="EntryLastName"
+                Placeholder="Apellido"
+                            Text="{Binding LastName}"/>
+            <Entry
+                x:Name="EntryAge"
+                Placeholder="Edad"
+                            Text="{Binding Age}"/>
+            <Entry
+                x:Name="EntryPhone"
+                Placeholder="Numero de telefono"
+                            Text="{Binding Phone}"/>
+            <Button
+                x:Name="ButtonSave"
+                Text="Guardar"
+                Clicked="ButtonSave_Clicked"/>
+            <Button
+                x:Name="ButtonDelete"
+                Text="Borrar"
+                Clicked="ButtonDelete_Clicked"/>
+            <Button
+                x:Name="ButtonCancel"
+                Text="Cancelar"
+                Clicked="ButtonCancel_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
